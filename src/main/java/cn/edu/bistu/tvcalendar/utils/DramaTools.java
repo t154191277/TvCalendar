@@ -9,7 +9,6 @@ import cn.edu.bistu.tvcalendar.model.Drama;
  * Created by Administrator on 2015/3/14.
  */
 public class DramaTools {
-    private static XmlCtrl XmlCtrl;
     public static List<Drama> Dramas = null;
     public static List<Drama> myDramas = null;
     static{
@@ -59,14 +58,11 @@ public class DramaTools {
 // 	}
 
     public static void addmyDrama(Drama Drama){
-        XmlCtrl = new XmlCtrl();
-        XmlCtrl.addDrama(Drama.getName());
         myDramas.add(Drama);
     }
 
     public static void removeDrama(Drama Drama){
-        XmlCtrl = new XmlCtrl();
-        XmlCtrl.addDrama(Drama.getName());
+
         myDramas.remove(Drama);
     }
 }
