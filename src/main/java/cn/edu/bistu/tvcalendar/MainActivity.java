@@ -33,7 +33,7 @@ public class MainActivity extends ActionBarActivity {
 
         initandsetview();
 
-
+		//
         viewPager = (ViewPager)findViewById(R.id.pager);
         viewPager.setAdapter(new BaseFragmentPagerAdapter(getSupportFragmentManager()));
         viewPager.setCurrentItem(1);
